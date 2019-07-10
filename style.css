@@ -1,0 +1,208 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: #333;
+    /* scroll-behavior: smooth; */
+
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 43px;
+    background: rgba(238, 238, 238, 0.705);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    box-shadow: 0px 0px 6px rgba(68, 68, 68, 0.3);
+    z-index: 1;
+}
+
+ul {
+    padding: 0;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+section {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 60px;
+}
+
+section:nth-child(even) {
+    background: #eceff5;
+}
+
+.overlap {
+    position: absolute;
+    top: -46px;
+    /* padding-left: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .container {
+    margin: 0 50px;
+    padding-top: 100px;
+} */
+
+i {
+    padding: 0 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.profile-img {
+    width: 140px;
+    border-radius: 50%;
+    border: 5px solid #d3d3d373;
+}
+
+.text-custom-color {
+    color:#0d77be;
+}
+
+.text-custom-size {
+    font-size: 4rem;
+    font-weight: 800;
+    /* padding-top: 60px; */
+    color: rgb(65, 65, 65);
+}
+
+.text-giant {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #26555d;
+}
+
+p {
+    line-height: 1.4rem;
+    padding: 0 40px;
+}
+
+footer {
+    position: relative;
+}
+
+.sticky-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-items {
+    padding: 20px;
+}
+
+.sticker-footer-sns {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: -24px;
+}
+
+/* Parallax effect */
+.para1 {
+    background-image: url("img/fuji-san.jpg");
+    min-height: 100%;
+}
+
+.para2 {
+    background-image: url("img/koi.jpg");
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.para1, .para2, .para3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    z-index: -1;
+    height: 100%;
+}
+
+.opacity-adj {
+    background: rgba(255, 255, 255, 0.7);
+    height: 100%;
+}
+
+.bg-coming-soon {
+    background-image: url("img/bg-night-sky.jpg");
+
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.bg-fill {
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.footer-soon {
+    position: absolute;
+    bottom: 0;
+    left: 0;;
+    padding: 20px 60px;
+}
+
+.divider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.divider > div {
+    height: 5px;    
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+#sec1, #sec2, #sec3 {
+    padding: 50px 0;
+}
+
+.paddTop {
+    height: 700px;
+}
